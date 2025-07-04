@@ -4,7 +4,9 @@ import MemoBoard from "./components/MemoBoard";
 import { useMemoStore } from "./store/MemoList";
 
 const App = () => {
-  const { memoList } = useMemoStore();
+  
+  const {memoList} = useMemoStore();
+
   return (
     <>
       <MemoBoard>

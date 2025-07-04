@@ -1,14 +1,16 @@
 import styled from "styled-components";
-import { useMemoStore } from "./../store/MemoList";
 import { useState } from "react";
+import { useMemoStore } from "../store/MemoList";
+
 const MemoInput = () => {
-  const { addMemo } = useMemoStore();
+  const {addMemo} = useMemoStore();
   const [value, setValue] = useState("");
 
   return (
     <AddMemoForm
       onSubmit={(e) => {
         e.preventDefault();
+
         addMemo(value);
         
         setValue("");

@@ -15,6 +15,7 @@ const MemoElem = (props) => {
 
 export default MemoElem;
 
+
 const MemoWrapper = styled.div`
   position: relative;
   width: 200px;
